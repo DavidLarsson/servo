@@ -1165,7 +1165,7 @@ impl PropertyId {
         // control its availability in all sheets.   For properties that are
         // both experimental and internal, the pref only controls its
         // availability in non-UA sheets (and in UA sheets it is always available).
-        ${id_set("INTERNAL", lambda p: p.experimental)}
+        ${id_set("INTERNAL", lambda p: p.internal)}
 
         % if product == "servo":
             ${id_set("EXPERIMENTAL", lambda p: p.experimental)}
